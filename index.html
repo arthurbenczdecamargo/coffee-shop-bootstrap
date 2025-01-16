@@ -1,0 +1,476 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="shortcut icon" href="./" type="image/x-icon">
+  <link rel="shortcut icon" href="./assets/favicon.png" type="image/x-icon">
+  <title>Serenatto</title>
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha2/dist/css/bootstrap.min.css" rel="stylesheet"
+    integrity="sha384-aFq/bzH65dt+w6FI2ooMVUpc+21e0SRygnTpmBvdBgSdnuTN7QbdgL+OapgHtvPp" crossorigin="anonymous">
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.10.4/font/bootstrap-icons.css">
+  <link rel="stylesheet" href="./style.css">
+  <link
+    href="https://fonts.googleapis.com/css2?family=Barlow+Condensed:wght@700&family=Barlow:wght@400;600&display=swap"
+    rel="stylesheet">
+</head>
+
+<body data-bs-theme="light">
+  <header>
+    <nav class="navbar-expand-lg navbar bg-body-tertiary fixed-top">
+      <div class="container-fluid">
+        <a class="navbar-brand" href="#"><img src="./assets/logo.png" alt="logo"></a>
+        <button class="navbar-toggler" type="button" data-bs-toggle="offcanvas" data-bs-target="#offcanvasNavbar"
+          aria-controls="offcanvasNavbar" aria-label="Toggle navigation">
+          <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="offcanvas offcanvas-end" tabindex="-1" id="offcanvasNavbar" aria-labelledby="offcanvasNavbarLabel">
+          <div class="offcanvas-header">
+            <h5 class="offcanvas-title" id="offcanvasNavbarLabel"><img src="./assets/logo-mobile.png" alt="logo"></h5>
+            <button type="button" class="btn-close" data-bs-dismiss="offcanvas" aria-label="Close"></button>
+          </div>
+          <div class="offcanvas-body">
+            <ul class="navbar-nav justify-content-end flex-grow-1 pe-3">
+              <li class="nav-item">
+                <a class="nav-link active" aria-current="page" href="#">Home</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link active" aria-current="page" href="#">About us</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link acitve" href="#contact">Contact</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link active" aria-current="page" href="#">
+                  <div class="form-check form-switch">
+                    <input class="form-check-input" type="checkbox" role="switch" id="dark-mode">
+                    <label class="form-check-label" for="dark-mode">Dark mode</label>
+                  </div>
+                </a>
+              </li>
+            </ul>
+          </div>
+        </div>
+      </div>
+    </nav>
+  </header>
+
+  <main>
+    <section class="banners banner-1 d-flex flex-column justify-content-center">
+      <div class="banners-title bg-body-secondary text-center py-5">
+        <h2 class="fw-bold">Serenatto Coffee</h2>
+        <p class="fs-5">Come visit us and share a hot coffee</p>
+      </div>
+    </section>
+
+    <section class="py-5">
+      <h2 class="text-center fw-bold pb-1">Services</h2>
+      <div class="container d-flex justify-content-around flex-wrap">
+        <div class="card m-4" style="width: 20rem;">
+          <img src="./assets/cafe-card.png" class="card-img-top"
+            alt="Balcão de padaria tradicional com alimentos diversos">
+          <div class="card-body">
+            <h5 class="card-title py-2 fw-bold">Café & Bistrô</h5>
+            <p class="card-text">Our bistro offers a wide variety of coffees, smoothies, delicious snacks and desserts.
+              An excellent option for those looking for good food, a quiet and cozy place.</p>
+            <a href="#" class="btn button-default w-100 fw-bold" data-bs-toggle="offcanvas" data-bs-target="#canvas-1"
+              aria-controls="offcanvasRight">See details</a>
+          </div>
+        </div>
+
+        <div class="card m-4" style="width: 20rem;">
+          <img src="./assets/buffet-card.png" class="card-img-top" alt="Mesa de buffet com alimentos diversos">
+          <div class="card-body">
+            <h5 class="card-title fw-bold">Buffet</h5>
+            <p class="card-text">Buffet and personalized catering for events, productions and celebrations. With
+              a varied menu adaptable to customer preferences, attentive service and
+              professional.</p>
+            <a href="#" class="btn button-default w-100 fw-bold mt-3" data-bs-toggle="offcanvas"
+              data-bs-target="#canvas-2" aria-controls="offcanvasRight">See details</a>
+          </div>
+        </div>
+
+        <div class="card m-4" style="width: 20rem;">
+          <img src="./assets/delivery-card.png" class="card-img-top" alt="Caixa aberta armazenando comidas diversas">
+          <div class="card-body">
+            <h5 class="card-title fw-bold">Delivery</h5>
+            <p class="card-text">For those who want to enjoy in the comfort of home, we offer delivery of
+              products. With the same varied menu as always, without losing our flavor and standard of
+              quality.</p>
+            <a href="#" class="btn button-default w-100 fw-bold mt-3" data-bs-toggle="offcanvas"
+              data-bs-target="#canvas-3" aria-controls="offcanvasRight">See details</a>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section class="banners banner-2 d-flex flex-column justify-content-center">
+      <div class="banners-title bg-body-secondary text-center py-5">
+        <h2 class="fw-bold">Doors open to all audiences</h2>
+        <p class="fs-5">Our space is cozy, pet friendly, prepared to receive children, people with disabilities and
+          coworking environment.</p>
+      </div>
+    </section>
+
+    <section class="py-5">
+      <h2 class="fw-bold text-center pb-1">Menu</h2>
+
+      <div class="row mx-0">
+
+        <div class="col-12 col-md-6 col-lg-4">
+          <div class="card border-0 mx-auto btn" data-bs-toggle="modal" data-bs-target="#modal-1" style="width: 18rem;">
+            <img src="./assets/produtos-cafe-tradicional.png" class="card-img-top" alt="Café preto.">
+            <div class="card-body">
+              <h3 class="card-text text-center fw-bold">Traditional Coffees</h3>
+            </div>
+          </div>
+        </div>
+
+        <div class="col-12 col-md-6 col-lg-4">
+          <div class="card border-0 mx-auto btn" data-bs-toggle="modal" data-bs-target="#modal-2" style="width: 18rem;">
+            <img src="./assets/produtos-cafe-especial.png" class="card-img-top" alt="Café expresso.">
+            <div class="card-body">
+              <h3 class="card-text fw-bold text-center">Special Coffees</h3>
+            </div>
+          </div>
+        </div>
+
+        <div class="col-12 col-md-6 col-lg-4">
+          <div class="card border-0 mx-auto btn" data-bs-toggle="modal" data-bs-target="#modal-3" style="width: 18rem;">
+            <img src="./assets/produtos-vitaminas.png" class="card-img-top" alt="Vitaminas variadas">
+            <div class="card-body">
+              <h3 class="card-text text-center fw-bold text-nowrap">Smoothies</h3>
+            </div>
+          </div>
+        </div>
+
+        <div class="col-12 col-md-6 col-lg-4">
+          <div class="card border-0 mx-auto btn" data-bs-toggle="modal" data-bs-target="#modal-4" style="width: 18rem;">
+            <img src="./assets/produtos-paes.png" class="card-img-top" alt="Pães variados">
+            <div class="card-body">
+              <h3 class="card-text text-center fw-bold">Breads & Focaccias</h3>
+            </div>
+          </div>
+        </div>
+
+        <div class="col-12 col-md-6 col-lg-4">
+          <div class="card border-0 mx-auto btn" style="width: 18rem;">
+            <img src="./assets/produtos-doces.png" data-bs-toggle="modal" data-bs-target="#modal-5" class="card-img-top"
+              alt="Bolo de morango">
+            <div class="card-body">
+              <h3 class="card-text text-center fw-bold">Cakes</h3>
+            </div>
+          </div>
+        </div>
+
+        <div class="col-12 col-md-6 col-lg-4">
+          <div class="card border-0 mx-auto btn" data-bs-toggle="modal" data-bs-target="#modal-6" style="width: 18rem;">
+            <img src="./assets/produtos-salgados.png" class="card-img-top" alt="Torta salgada">
+            <div class="card-body">
+              <h3 class="card-text text-center fw-bold">Pies</h3>
+            </div>
+          </div>
+        </div>
+      </div>
+
+    </section>
+
+    <section class="banners banner-3">
+    </section>
+  </main>
+
+  <section class="py-4 container">
+    <div class="row">
+      <div class="col-10 col-xl-8 mx-auto">
+        <div class="border border-2 rounded p-3">
+          <h3 class="fw-bold p-3">Contact us</h3>
+          <form id="contact">
+            <div class="form-floating mb-3">
+              <input type="text" class="form-control" id="floatingName" placeholder="name">
+              <label for="floatingName">Name</label>
+            </div>
+            <div class="form-floating mb-3">
+              <input type="email" class="form-control" id="floatingEmail" placeholder="name@example.com">
+              <label for="floatingEmail">Email</label>
+            </div>
+            <div class="form-floating mb-3">
+              <input type="number" class="form-control" id="floatingNumber" placeholder="number">
+              <label for="floatingNumber">Phone number</label>
+            </div>
+            <select class="form-select mb-3" aria-label="Default select example">
+              <option selected>Contact preference:</option>
+              <option value="1">Phone call</option>
+              <option value="2">Email</option>
+              <option value="3">Message</option>
+            </select>
+            <label for="satisfaction" class="form-label">Satisfaction</label>
+            <input type="range" class="form-range input-range" id="satisfaction">
+            <div class="form-check mb-3">
+              <input class="form-check-input" type="checkbox" value="" id="flexCheckDefault">
+              <label class="form-check-label" for="flexCheckDefault">
+                Recieve newsletter
+              </label>
+            </div>
+            <button type="button" class="btn button-default w-100 fw-bold mb-3 py-3">Submit</button>
+          </form>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <footer class="text-center">
+    <section class="pb-0 mb-4">
+      <div class="p-4 bgcolor-footer">
+        <p class="fs-5">Developed by Arthur | <a class="link-dark" href="https://github.com/arthurbenczdecamargo"><i
+              class="bi bi-github"></i></a> <a class="link-dark"
+            href="https://www.linkedin.com/in/arthurbenczdecamargo/"><i class="bi bi-linkedin"></i></a></p>
+      </div>
+    </section>
+  </footer>
+
+  <div class="offcanvas offcanvas-end" tabindex="-1" id="canvas-1" aria-labelledby="offcanvasRightLabel">
+    <div class="offcanvas-header">
+      <h5 class="offcanvas-title" id="offcanvasRightLabel">Coffee & Bistro</h5>
+      <button type="button" class="btn-close" data-bs-dismiss="offcanvas" aria-label="Close"></button>
+    </div>
+    <div class="offcanvas-body">
+      <div class="accordion" id="accordionExample1">
+        <div class="accordion-item">
+          <h2 class="accordion-header">
+            <button class="accordion-button button-default" type="button" data-bs-toggle="collapse"
+              data-bs-target="#collapseOne1" aria-expanded="true" aria-controls="collapseOne1">
+              Coffee
+            </button>
+          </h2>
+          <div id="collapseOne1" class="accordion-collapse collapse show" data-bs-parent="#accordionExample1">
+            <div class="accordion-body">
+              We have an excellent space for eating and relaxing, with a display case full of sweets, savory snacks,
+              traditional and special coffees to enjoy your best moments.
+            </div>
+          </div>
+        </div>
+        <div class="accordion-item">
+          <h2 class="accordion-header">
+            <button class="accordion-button collapsed button-default" type="button" data-bs-toggle="collapse"
+              data-bs-target="#collapseTwo1" aria-expanded="false" aria-controls="collapseTwo1">
+              Bistro
+            </button>
+          </h2>
+          <div id="collapseTwo1" class="accordion-collapse collapse" data-bs-parent="#accordionExample1">
+            <div class="accordion-body">
+              In addition to all-day coffee, we offer lunchtime meals (11am to 3pm) with delicious bistro dishes!
+            </div>
+          </div>
+        </div>
+        <div class="accordion-item">
+          <h2 class="accordion-header">
+            <button class="accordion-button collapsed button-default" type="button" data-bs-toggle="collapse"
+              data-bs-target="#collapseThree1" aria-expanded="false" aria-controls="collapseThree1">
+              Coworking
+            </button>
+          </h2>
+          <div id="collapseThree1" class="accordion-collapse collapse" data-bs-parent="#accordionExample1">
+            <div class="accordion-body">
+              We have adequate space for work, with high-speed internet connection and comfortable facilities
+              for meetings.
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <div class="offcanvas offcanvas-end" tabindex="-1" id="canvas-2" aria-labelledby="offcanvasRightLabel">
+    <div class="offcanvas-header">
+      <h5 class="offcanvas-title" id="offcanvasRightLabel">Buffet</h5>
+      <button type="button" class="btn-close" data-bs-dismiss="offcanvas" aria-label="Close"></button>
+    </div>
+    <div class="offcanvas-body">
+      <div class="accordion" id="accordionExample2">
+        <div class="accordion-item">
+          <h2 class="accordion-header">
+            <button class="accordion-button button-default" type="button" data-bs-toggle="collapse"
+              data-bs-target="#collapseOne2" aria-expanded="true" aria-controls="collapseOne2">
+              Events
+            </button>
+          </h2>
+          <div id="collapseOne2" class="accordion-collapse collapse show" data-bs-parent="#accordionExample2">
+            <div class="accordion-body">
+              We organize buffets with varied and personalized menus for weddings, birthday parties and other events!
+            </div>
+          </div>
+        </div>
+        <div class="accordion-item">
+          <h2 class="accordion-header">
+            <button class="accordion-button collapsed button-default" type="button" data-bs-toggle="collapse"
+              data-bs-target="#collapseTwo2" aria-expanded="false" aria-controls="collapseTwo2">
+              Catering
+            </button>
+          </h2>
+          <div id="collapseTwo2" class="accordion-collapse collapse" data-bs-parent="#accordionExample2">
+            <div class="accordion-body">
+              We offer a varied food service for coffee breaks, productions and backstage.
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <div class="offcanvas offcanvas-end" tabindex="-1" id="canvas-3" aria-labelledby="offcanvasRightLabel">
+    <div class="offcanvas-header">
+      <h5 class="offcanvas-title" id="offcanvasRightLabel">Delivery</h5>
+      <button type="button" class="btn-close" data-bs-dismiss="offcanvas" aria-label="Close"></button>
+    </div>
+    <div class="offcanvas-body">
+      <div class="accordion" id="accordionExample3">
+        <div class="accordion-item">
+          <h2 class="accordion-header">
+            <button class="accordion-button button-default" type="button" data-bs-toggle="collapse"
+              data-bs-target="#collapseOne3" aria-expanded="true" aria-controls="collapseOne3">
+              Fair price
+            </button>
+          </h2>
+          <div id="collapseOne3" class="accordion-collapse collapse show" data-bs-parent="#accordionExample3">
+            <div class="accordion-body">
+              We offer product delivery at a fair price. With the same varied menu as always, without losing our flavor
+              and standard of quality.
+            </div>
+          </div>
+        </div>
+        <div class="accordion-item">
+          <h2 class="accordion-header">
+            <button class="accordion-button collapsed button-default" type="button" data-bs-toggle="collapse"
+              data-bs-target="#collapseTwo3" aria-expanded="false" aria-controls="collapseTwo3">
+              Commitment
+            </button>
+          </h2>
+          <div id="collapseTwo3" class="accordion-collapse collapse" data-bs-parent="#accordionExample3">
+            <div class="accordion-body">
+              We serve all regions with speed and commitment.
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <div class="modal fade" id="modal-1" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+    <div class="modal-dialog">
+      <div class="modal-content">
+        <div class="modal-header">
+          <h2 class="modal-title fs-5 fw-bold" id="exampleModalLabel">Traditional Coffees</h2>
+          <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+        </div>
+        <div class="modal-body">
+          <img src="./assets/produtos-cafe-tradicional.png" class="w-100" alt="coffee">
+          <p>Traditional coffees served freshly.</p>
+        </div>
+        <div class="modal-footer mx-auto">
+          <button type="button" class="btn btn-secondary button-default border-0" data-bs-dismiss="modal">Close</button>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <div class="modal fade" id="modal-2" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+    <div class="modal-dialog">
+      <div class="modal-content">
+        <div class="modal-header">
+          <h2 class="modal-title fs-5 fw-bold" id="exampleModalLabel">Special Coffees</h2>
+          <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+        </div>
+        <div class="modal-body">
+          <img src="./assets/produtos-cafe-especial.png" class="w-100" alt="coffee2">
+          <p>Special coffees for all tastes.
+          <p>
+        </div>
+        <div class="modal-footer mx-auto">
+          <button type="button" class="btn btn-secondary button-default border-0" data-bs-dismiss="modal">Close</button>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <div class="modal fade" id="modal-3" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+    <div class="modal-dialog">
+      <div class="modal-content">
+        <div class="modal-header">
+          <h2 class="modal-title fs-5 fw-bold" id="exampleModalLabel">Smoothies</h2>
+          <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+        </div>
+        <div class="modal-body">
+          <img src="./assets/produtos-vitaminas.png" class="w-100" alt="smoothies">
+          <p>Frozen smoothies for summer.</p>
+        </div>
+        <div class="modal-footer mx-auto">
+          <button type="button" class="btn btn-secondary button-default border-0" data-bs-dismiss="modal">Close</button>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <div class="modal fade" id="modal-4" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+    <div class="modal-dialog">
+      <div class="modal-content">
+        <div class="modal-header">
+          <h2 class="modal-title fs-5 fw-bold" id="exampleModalLabel">Breads & Foccacias</h2>
+          <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+        </div>
+        <div class="modal-body">
+          <img src="./assets/produtos-paes.png" class="w-100" alt="bread">
+          <p>Breads and focaccias of all kinds.</p>
+        </div>
+        <div class="modal-footer mx-auto">
+          <button type="button" class="btn btn-secondary button-default border-0" data-bs-dismiss="modal">Close</button>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <div class="modal fade" id="modal-5" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+    <div class="modal-dialog">
+      <div class="modal-content">
+        <div class="modal-header">
+          <h2 class="modal-title fs-5 fw-bold" id="exampleModalLabel">Cakes</h2>
+          <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+        </div>
+        <div class="modal-body">
+          <img src="./assets/produtos-doces.png" class="w-100" alt="cake">
+          <p>Delicious cakes of various flavors.</p>
+        </div>
+        <div class="modal-footer mx-auto">
+          <button type="button" class="btn btn-secondary button-default border-0" data-bs-dismiss="modal">Close</button>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <div class="modal fade" id="modal-6" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+    <div class="modal-dialog">
+      <div class="modal-content">
+        <div class="modal-header">
+          <h2 class="modal-title fs-5 fw-bold" id="exampleModalLabel">Pies</h2>
+          <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+        </div>
+        <div class="modal-body">
+          <img src="./assets/produtos-salgados.png" class="w-100" alt="pie">
+          <p>Freshly made pies.</p>
+        </div>
+        <div class="modal-footer mx-auto">
+          <button type="button" class="btn btn-secondary button-default border-0" data-bs-dismiss="modal">Close</button>
+        </div>
+      </div>
+    </div>
+  </div>
+
+
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha2/dist/js/bootstrap.bundle.min.js"
+    integrity="sha384-qKXV1j0HvMUeCBQ+QVp7JcfGl760yU08IQ+GpUo5hlbpg51QRiuqHAJz8+BrxE/N"
+    crossorigin="anonymous"></script>
+  <script src="./script.js"></script>
+</body>
+
+</html>

@@ -1,0 +1,73 @@
+body {
+  --bege: #E6E0D6;
+  --dark-brown: #816D4F;
+  --light-brown: #B29463;
+  font-family: 'Barlow', sans-serif;
+  height: 2000px;
+}
+
+input[type=checkbox] {
+  border: 2px solid var(--light-brown);
+  box-shadow: none;
+}
+
+input[type=checkbox]:checked,
+input[type=checkbox]:focus {
+  background-color: var(--light-brown);
+  border-color: var(--light-brown);
+  box-shadow: none;
+  outline: none;
+}
+
+.input-range::-webkit-slider-thumb {
+  background-color: var(--light-brown);
+}
+
+.banner-1 {
+  background-image: url(./assets/banner-1.png);
+}
+
+.banner-2 {
+  background-image: url(./assets/banner-2.png);
+}
+
+.banner-3 {
+  background-image: url(./assets/banner-3.png);
+}
+
+.banners {
+  width: 100%;
+  height: 100vh;
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
+  background-attachment: fixed;
+}
+
+.banners-title {
+  --bs-bg-opacity: .2;
+}
+
+.button-default {
+  background-color: var(--light-brown);
+  color: black;
+}
+
+.button-default:hover {
+  background-color: var(--dark-brown);
+}
+
+.bgcolor-footer {
+  background-color: var(--light-brown);
+}
+
+[data-bs-theme="dark"] {
+  color: white;
+  .nav-link, .card-body, .offcanvas, .accordion, .link-dark {
+    --bs-nav-link-color: white;
+    --bs-card-color: white;
+    --bs-offcanvas-color: white;
+    --bs-body-color: white;
+    color: white;
+  }
+}
